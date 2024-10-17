@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Countdown Timer</title>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Include the Flip Countdown CSS -->
+    <link rel="stylesheet" href="jquery.flipcountdown.css">
+    
+    <!-- Include the Flip Countdown Plugin JS -->
+    <script src="jquery.flipcountdown.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+        #countdown {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="countdown"></div>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize the countdown
+            $('#countdown').flipcountdown({
+                size: 'md', // Change size to 'sm', 'md', or 'lg' for small, medium, or large respectively
+                beforeDateTime: "2024/12/31 23:59:59" // Set the countdown date and time
+            });
+        });
+    </script>
+    
+</body>
+</html>
